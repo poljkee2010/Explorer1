@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.2.2)
+cmake_minimum_required(VERSION 3.5.1)
 project(explorer VERSION 0.0.0 LANGUAGES C CXX)
 set(CMAKE_CXX_COMPILER "g++-7")
 set(CMAKE_CXX_STANDARD 17)
