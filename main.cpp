@@ -26,7 +26,7 @@
 		out << "Filename:\t" << textFilename << endl;	//Запись информации в файл
 		out << "Modification date:\t" << asctime(localtime(&cftime)) << endl;
 		out << "Size:\t" << fs::file_size(filePath) << " byte" << endl;
-		out.close();
+		out.close(); //Закрытие потока
  	}
 
  	catch (const exception& e) 
