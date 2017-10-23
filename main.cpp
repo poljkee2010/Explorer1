@@ -19,15 +19,15 @@
  		const fs::path filePath = address; // Указываем путь к файлу file.dat
  		const fs::path textFilename = filePath.filename(); // Получаем имя файла file.dat
 		auto  writeTimePoint = fs::last_write_time(filePath); 			// Получаем время последнего изменения файла file.dat
-    time_t cftime = decltype(writeTimePoint)::clock::to_time_t(writeTimePoint);   // Переделаем данные времени в строку для вывода
+  		time_t cftime = decltype(writeTimePoint)::clock::to_time_t(writeTimePoint);   // Переделаем данные времени в строку для вывода
 
-    //ofstream - класс, используемый для записи данных в файл
+  		//ofstream - класс, используемый для записи данных в файл
 		ofstream(filePath)	<< "Filename:\t" << textFilename << endl
-							<< "Modification date:\t" << asctime(localtime(&cftime))
-							<< "Size:\t" << fs::file_size(filePath) << " byte" << endl; // Запись информации в файл
+					<< "Modification date:\t" << asctime(localtime(&cftime))
+					<< "Size:\t" << fs::file_size(filePath) << " byte" << endl; // Запись информации в файл
  	}
 
- 	catch (const std::exception& e) 
+ 	catch (const exception& e) 
  	{
  		cout << e.what() << endl;
  	}
