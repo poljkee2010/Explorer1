@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/poljkee2010/Explorer1.svg?branch=master)](https://travis-ci.org/poljkee2010/Explorer1)
 ## Explorer (I этап)
 
 - Порядковый номер: **4**
