@@ -22,9 +22,7 @@
   		time_t cftime = decltype(writeTimePoint)::clock::to_time_t(writeTimePoint);   // Переделаем данные времени в строку для вывода
 
   		//ofstream - класс, используемый для записи данных в файл
-		ofstream(filePath)	<< "Filename:\t" << textFilename << endl
-					<< "Modification date:\t" << asctime(localtime(&cftime))
-					<< "Size:\t" << fs::file_size(filePath) << " byte" << endl; // Запись информации в файл
+		ofstream(filePath) << "Filename:\t" << textFilename << endl << "Modification date:\t" << asctime(localtime(&cftime)) << "Size:\t" << fs::file_size(filePath) << " byte" << endl; // Запись информации в файл
  	}
 
  	catch (const exception& e) 
