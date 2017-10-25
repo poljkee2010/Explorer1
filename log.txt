@@ -1,0 +1,4 @@
+Filename:	file.dat
+Modification date:	Wed Oct 25 19:21:10 2017
+
+Size:	14 byte
